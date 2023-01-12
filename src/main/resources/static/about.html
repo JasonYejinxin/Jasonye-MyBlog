@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>JASON YE BLOG</title>
+
+    <!-- 引入 JQ 和 Bootstrap -->
+    <script src="js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <!-- 引入自己的CSS -->
+    <link href="css/about.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<!--引入头部-->
+<script language="javascript" type="text/javascript" src="js/header.js"></script>
+<!--题图-->
+<img id="titu" src="img/about/titu.jpg"/>
+<!--主体内容-->
+<div id="content">
+
+    <!-- 关于信息 -->
+    <div class="aboutInfo">
+        <div class="leftInfo">
+            <img src="img/head.jpg">
+            <h2>Jason Ye</h2>
+            <h4>A programmer who likes to cook and play video games</h4>
+        </div>
+        <div class="rightInfo">
+            <h2>Procedure to build this blog：</h2>
+            <div class="aboutArticle">
+                <div class="title">
+                    <a href="">Personal Blog with SpringBoot[Preparation]</a>
+                </div>
+                <div class="summary">
+                    Requirements analysis, Database design, Prototype design, Project construction, RESTful APIs design
+                </div>
+            </div>
+            <div class="aboutArticle">
+                <div class="title">
+                    <a href="">Personal Blog with SpringBoot[Backend]</a>
+                </div>
+                <div class="summary">
+                    Backend Development in Reference of Restful APIs, Implemented Log, Statics, and Authority management
+                </div>
+            </div>
+            <div class="aboutArticle">
+                <div class="title">
+                    <a href="">Personal Blog with SpringBoot[Frontend/Conclusion]</a>
+                </div>
+                <div class="summary">
+                    Integration of Frontend and Backend, Conclusion
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. END ABOUT INFO -->
+
+    <!--留言区-->
+    <div style="margin-top: 60px;">
+        <label>Comment：</label>
+    </div>
+    <div id="commentList" class="commentList">
+    </div>
+    <!-- /. END COMMENT LIST -->
+
+    <!--新增留言-->
+    <div class="comment">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                New Comment
+            </div>
+            <div class="panel-body">
+                <label>Name：</label>
+                <input id="commentName" class="form-control"/>
+                <label>Email：</label>
+                <input id="commentEmail" class="form-control">
+                <label>Content：</label>
+                <textarea id="commentContent" rows="3" class="form-control"></textarea><br/>
+                <div class="text-right">
+                    <button id="addComment" class="btn btn-success">Yes, upload!</button>
+                </div>
+            </div>
+            <!-- /. END PANEL-BODY -->
+        </div>
+        <!-- /. END PANEL -->
+    </div>
+    <!-- /. END COMMENT -->
+
+    <!-- 提示不能为空信息MODAL -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header alert-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Notice：</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>The name and comment content cannot be empty! At the same time, we hope you can leave your valuable Email address for us to contact!</label>
+                        </div>
+                    </div>
+                    <!-- /. END RWO -->
+                </div>
+                <!-- /. END MODAL BODY -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">I know</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /. END MODAL -->
+    <!-- 添加成功提示信息MODAL -->
+    <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header alert-success">
+                    <h4 class="modal-title">Notice：</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>Success！</label>
+                        </div>
+                    </div>
+                    <!-- /. END RWO -->
+                </div>
+                <!-- /. END MODAL BODY -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" id="addConfirmBtn">Thanks for your support</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /. END MODAL -->
+</div>
+
+<!-- 引入尾部 -->
+<script language="javascript" type="text/javascript" src="js/footer.js"></script>
+<!-- 引入自己的JS -->
+<script src="js/about.js"></script>
+</body>
+
+</html>

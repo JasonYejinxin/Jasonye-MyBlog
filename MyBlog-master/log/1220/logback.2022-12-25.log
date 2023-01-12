@@ -1,0 +1,4 @@
+21:24:56.314 logback [Thread-19] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60fa8799: startup date [Sat Dec 24 20:09:16 EST 2022]; root of context hierarchy
+21:24:56.352 logback [Thread-19] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+21:24:56.355 logback [Thread-19] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+21:24:56.364 logback [Thread-19] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
